@@ -5,17 +5,17 @@
         @include('voyager::alerts')
         @include('voyager::dimmers')
         <div class="analytics-container">
-            <?php $google_analytics_client_id = Voyager::setting("admin.google_analytics_client_id"); ?>
-            @if (isset($google_analytics_client_id) && !empty($google_analytics_client_id))
-                {{-- Google Analytics Embed --}}
-                <div id="embed-api-auth-container"></div>
-            @else
-                <p style="border-radius:4px; padding:20px; background:#fff; margin:0; color:#999; text-align:center;">
-                    {!! __('voyager::analytics.no_client_id') !!}
-                    <a href="https://console.developers.google.com" target="_blank">https://console.developers.google.com</a>
-                </p>
-            @endif
-
+            <!--<?php $google_analytics_client_id = Voyager::setting("admin.google_analytics_client_id"); ?>-->
+            <!--@if (isset($google_analytics_client_id) && !empty($google_analytics_client_id))-->
+            <!--    {{-- Google Analytics Embed --}}-->
+            <!--    <div id="embed-api-auth-container"></div>-->
+            <!--@else-->
+            <!--    <p style="border-radius:4px; padding:20px; background:#fff; margin:0; color:#999; text-align:center;">-->
+            <!--        {!! __('voyager::analytics.no_client_id') !!}-->
+            <!--        <a href="https://console.developers.google.com" target="_blank">https://console.developers.google.com</a>-->
+            <!--    </p>-->
+            <!--@endif-->
+<iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%237986CB&amp;ctz=Africa%2FCairo&amp;src=bGF3eWVyLm15b2ZmaWNlQGdtYWlsLmNvbQ&amp;src=ZW4uZWcjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23039BE5&amp;color=%230B8043" style="border:solid 1px #777" width="400" height="400" frameborder="0" scrolling="no"></iframe>
             <div class="Dashboard Dashboard--full" id="analytics-dashboard">
                 <header class="Dashboard-header">
                     <ul class="FlexGrid">
